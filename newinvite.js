@@ -14,7 +14,9 @@ window.addEventListener("resize", () => {
     canvas.height = 0.5625*window.innerWidth;
 })
 
-
+window.addEventListener('load', () => {
+    document.querySelector('#loading-screen').style.display = 'none';
+})
 
 function indexReturn(index){
     if (index < 10){
@@ -58,7 +60,7 @@ gsap.to(seek, {
 })
 
 allIms[0].onload = Update;
-document.querySelector('#loading-screen').style.display = 'none';
+
 
 function Update(){
     // erase the existing canvas
