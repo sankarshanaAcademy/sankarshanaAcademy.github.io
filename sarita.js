@@ -14,7 +14,7 @@ window.addEventListener("resize", () => {
     canvas.height = 0.5625*window.innerWidth;
 })
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     document.querySelector('#loading-screen').style.display = 'none';
 })
 
@@ -60,6 +60,7 @@ gsap.to(seek, {
 })
 
 allIms[0].onload = Update;
+
 
 function Update(){
     // erase the existing canvas
