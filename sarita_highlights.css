@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.kalnia-sankarshana {
+  font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@keyframes flow{
+    0%{
+        background-position: right;
+        background-size: 200%;
+    }
+   
+    80%{
+        background-position: left;
+        
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+.s-coverHeading{
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(
+        45deg,
+        rgb(32, 50, 114),
+        rgb(62, 131, 118)
+        );
+    
+    margin-bottom: 5%;
+    color: white;
+
+    animation-name: flow;
+    animation-duration: 4s;
+}
+
+.s-textRaleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+
+a{
+    color: #a1c5e6;
+}
+
+.s-headingText {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.s-subHeading{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(
+        45deg,
+        rgb(32, 50, 114),
+        rgb(62, 131, 118)
+        );
+    color: white;
+}
+
+.s-subHeadingText {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform : translate(0,-50%);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;  
+}
+
+#sH-vaishTanu{
+    background-image: url('./saritaReport_images/tnvSH.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+}
+
+#sH-nrityaloka{
+    background-image: url('./saritaReport_images/nrityaloka.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sH-sankarshana{
+    background-image: url('./saritaReport_images/sankarshana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sH-sai{
+    background-image: url('./saritaReport_images/sai.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel{
+    margin-top: 7%;
+}
+
+@media (max-width: 660px){
+    .s-subHeadingText {
+        left: 50%;
+        top: 50%;
+        transform : translate(-50%,-50%);       
+    }
+    .s-subHeading{
+        height: 25vh;
+        background-position-x: -10%;
+        box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+    }
+}
+
+@media (max-width: 540px){
+    nav{
+        position: relative;
+    }
+
+    .kalnia-sankarshana{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform : translate(-50%,0);  
+    }
+}
+
+@media (max-width: 460px){      
+    .s-subHeading{
+        height: 25vh;
+        background-position-x: 0;
+    }
+}
+
+@keyframes revealUp{
+    from{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.motion{
+    animation: revealUp;
+    animation-play-state: paused;
+    animation-duration: 2s;
+}
+
+footer{
+    height: 30vh;
+    background-color: rgb(33, 37, 41);
+    background-image: linear-gradient(rgb(12, 12, 12), rgb(9, 27, 31));
+
+}
+
+#footerText{
+    position: absolute;
+    left: 50%;
+    transform : translate(-50%,0);
+    font-size: 0.7rem;
+}
+
+
